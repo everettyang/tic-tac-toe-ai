@@ -1,5 +1,7 @@
-void get_coords();
+#include <iostream> 
+#include "ttt.h"
 
+//human input and do move definitions
 void do_move(int x, int y)
 {
 

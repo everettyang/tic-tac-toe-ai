@@ -1,5 +1,7 @@
-/* declares the game over check, which checks if the game is over */
+#include <iostream>
+#include "ttt.h"
 
+//declares end game string variable
 std::string drawString = "DRAW";
 std::string winString = "YOU WIN!!";
 std::string loseString = "DUMB COMPUTER WINS!!";

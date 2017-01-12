@@ -1,8 +1,8 @@
+#include <iostream>
+#include "ttt.h"
 /* This script contains the function for constructing the tic tac toe board. */
 
 // "-" = no piece
-
-
 char board[3][3];
 char human = 'X';
 char computer = 'O';

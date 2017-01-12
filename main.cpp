@@ -1,12 +1,7 @@
-//includes all the dependencies
-#include <cstdio>
+/* includes my header files and system header files  */
 #include <time.h>
-#include <iostream>
 #include <stdlib.h>
-#include "board.h"
-#include "utils.h"
-#include "human_input.h"
-#include "ai.h"
+#include "ttt.h"
 
 //game loops until gameOver function returns true, then the loop breaks and the script terminates.
 int main()

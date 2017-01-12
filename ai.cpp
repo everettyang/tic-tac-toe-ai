@@ -1,5 +1,5 @@
-/* declares AI logic and ai's do move function */
-void determine_move();
+#include <stdlib.h>
+#include "ttt.h"
 
 void ai_move(int h, int k)
 // writes move to the board and then prints the board
