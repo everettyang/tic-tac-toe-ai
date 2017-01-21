@@ -1,4 +1,3 @@
-#include <iostream>
 #include "ttt.h"
 
 //declares end game string variable

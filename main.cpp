@@ -1,6 +1,3 @@
-/* includes my header files and system header files  */
-#include <time.h>
-#include <stdlib.h>
 #include "ttt.h"
 
 //game loops until gameOver function returns true, then the loop breaks and the script terminates.

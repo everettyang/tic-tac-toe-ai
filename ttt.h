@@ -1,7 +1,11 @@
 //include guard, protects from duplicate function definitions
 #ifndef TTT_H
 #define TTT_H
+#include <stdlib.h>
 #include <string>
+#include <time.h>
+#include <stdlib.h>
+#include <iostream>
 
 /* declares 3x3 board and symbols. initiates end game string variables 
  extern is used so other source files can use these variables */

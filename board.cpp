@@ -1,4 +1,3 @@
-#include <iostream>
 #include "ttt.h"
 /* This script contains the function for constructing the tic tac toe board. */
 

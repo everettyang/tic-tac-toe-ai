@@ -1,4 +1,3 @@
-#include <iostream> 
 #include "ttt.h"
 
 //human input and do move definitions

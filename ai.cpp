@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "ttt.h"
 
 void ai_move(int h, int k)
