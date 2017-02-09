@@ -12,7 +12,6 @@ void print_board()
 // this function creates the 3x3 board
 
 {
-
 	//prints the board
 	
 	std::cout << "\t" << "1\t" << "2\t" << "3\t";

@@ -21,21 +21,36 @@ void get_coords()
 	// gets the coords and checks to see if its between 1 and 3
 	int x, y;
 
-	while (std::cout << "Enter X coordinate (1-3): "  && !(std::cin >> x) || 1 > x || x > 3)
+	while (std::cout << "Enter X coordinate (1-3) or '0' to print board: "  && !(std::cin >> x) || 1 > x || x > 3)
+
 	{
+		if (x == 0)
+		{
+			print_board();
+			continue;
+		}
+
 		std::cin.clear();
 		std::cin.ignore(1000, '\n');
 		std::cout << "Invalid, please enter a number between 1 and 3.\n" << std::endl;
 	}
 	
 
-	while(std::cout << "Enter Y coordinate (1-3): " && !(std::cin >> y) || 1 > y || y > 3)
+	while(std::cout << "Enter Y coordinate (1-3) or '0' to print board: " && !(std::cin >> y) || 1 > y || y > 3)
+
 	{
+		if (y == 0)
+		{
+			print_board();
+			continue;
+		}
+
 		std::cin.clear();
 		std::cin.ignore(1000, '\n');
 		std::cout << "Invalid, please enter a number between 1 and 3.\n" << std::endl;
 	}
 	
+
 	//clears input buffer
 	std::cin.clear();
 	std::cin.ignore(1000, '\n');

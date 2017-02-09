@@ -15,21 +15,37 @@ bool gameOver()
 		{
 			if (board[i][j] != empty)
 			{
-				if (i == 0 || j == 0)
+				if (j == 0)
 				{
 					// if there is 3 in a row then game ends.
-					if (board[i][j] == board[i][j+1] && board[i][j] == board[i][j+2] ||
-					board[i][j] == board[i+1][j] && board[i][j] == board[i+2][j])
+					if (board[i][j] == board[i][j+1] && board[i][j] == board[i][j+2]) 
 					{
 						
 						if (board[i][j] == human)
-							{	
+						{
 							std::cout << winString << std::endl;
-							}
+						}
 						else
-							{
+						{
 							std::cout << loseString << std::endl;
-							}
+						}
+
+						return true;
+					}
+				}
+
+				if (i == 0)
+				{
+					if (board[i][j] == board[i+1][j] && board[i][j] == board[i+2][j])
+					{
+						if (board[i][j] == human)
+						{	
+							std::cout << winString << std::endl;
+						}
+						else
+						{
+							std::cout << loseString << std::endl;
+						}
 
 						return true;
 					}
@@ -46,6 +62,7 @@ bool gameOver()
 			{
 			if (board[2][2] == human)
 			{
+				std::cout << 2 << std::endl;
 				std::cout << winString << std::endl;
 			}
 			else
@@ -57,6 +74,7 @@ bool gameOver()
 			return true;
 			}
 	}
+	//
 	//second diagonal
 	if (board[2][0] != '-')
 	{
@@ -64,6 +82,7 @@ bool gameOver()
 		{
 			if (board[2][0] == human)
 			{
+				std::cout << 3 << std::endl;
 				std::cout << winString << std::endl;
 			}
 			else
@@ -73,8 +92,6 @@ bool gameOver()
 			
 			return true;
 		}
-		
-
 	}
 
 
@@ -93,7 +110,6 @@ bool gameOver()
 
 	
 	if (i == 2) {std::cout << drawString << std::endl;return true;}
-	
 
 	}
 
